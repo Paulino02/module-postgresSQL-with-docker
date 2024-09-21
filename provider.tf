@@ -9,6 +9,8 @@ terraform {
       version = "1.21.2"
     }
   }
+  backend "http" {}
+  required_version = "> 1.3.6"
 }
 
 provider "docker" {
